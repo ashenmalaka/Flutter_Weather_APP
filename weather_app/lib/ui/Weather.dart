@@ -38,7 +38,7 @@ class Weather extends StatelessWidget{
                 left: 6.0,
               ),
               child: Text(
-                'u\21003',
+                '\u2103',
                 style: TextStyle(
                   fontSize: 24.0,
                 ),
