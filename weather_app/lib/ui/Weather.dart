@@ -68,6 +68,14 @@ class Weather extends StatelessWidget{
                 fontWeight: FontWeight.bold,
                 color: Colors.white
               ),
+            ),
+
+            Text(
+              'Cloudy',
+              style: TextStyle(
+                fontSize: 24.0,
+                color: Colors.white
+              ),
             )
           ],
         ),
