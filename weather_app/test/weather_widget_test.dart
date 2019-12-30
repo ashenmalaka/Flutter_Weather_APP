@@ -9,6 +9,8 @@ void main(){
     await tester.pumpWidget(directAncestor(Weather()));
 
     expect(find.byType(RichText), findsWidgets);
+    expect(find.byType(Row), findsWidgets);
+    expect(find.byType(Column), findsOneWidget);
   });
 }
 
