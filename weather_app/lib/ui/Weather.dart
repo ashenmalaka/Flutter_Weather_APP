@@ -7,7 +7,7 @@ class Weather extends StatelessWidget{
 
     Widget dataSection = Container(
       child: Text(
-        DateFormat('MMMM d, H:m').format(DateTime.now()),
+        DateFormat('MMMM d, hh:mm a').format(DateTime.now()),
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white,
