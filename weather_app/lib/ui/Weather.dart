@@ -44,6 +44,12 @@ class Weather extends StatelessWidget{
                 ),
               ),
             ),
+          ),
+          Image.asset(
+            'assets/images/cloudy.png',
+            width: 100.0,
+            height: 100.0,
+            
           )
         ],
        )
