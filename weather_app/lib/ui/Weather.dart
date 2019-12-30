@@ -15,12 +15,30 @@ class Weather extends StatelessWidget{
           )
       ),
     );
+
+    Widget tempSection = Container(
+      padding: EdgeInsets.symmetric(
+        vertical: 10.0,
+       ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text('20',
+            style: TextStyle(
+              fontSize: 80.0,
+            ),
+          )
+        ],
+       )
+
+      );
     return Container(
       padding: const EdgeInsets.all(60.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          dataSection
+          dataSection,
+          tempSection
          ],
         ),
     );
