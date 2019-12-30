@@ -20,7 +20,7 @@ class Weather extends StatelessWidget{
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-
+          dataSection
          ],
         ),
     );
