@@ -49,11 +49,28 @@ class Weather extends StatelessWidget{
             'assets/images/cloudy.png',
             width: 100.0,
             height: 100.0,
-            
+            //fit: BoxFit.cover,
           )
         ],
        )
 
+      );
+
+      Widget descriptionSection = Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Tokyo',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white
+              ),
+            )
+          ],
+        ),
       );
     return Container(
       padding: const EdgeInsets.all(60.0),
@@ -61,7 +78,8 @@ class Weather extends StatelessWidget{
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           dataSection,
-          tempSection
+          tempSection,
+          descriptionSection
          ],
         ),
     );
