@@ -11,6 +11,7 @@ void main(){
     expect(find.byType(RichText), findsWidgets);
     expect(find.byType(Row), findsWidgets);
     expect(find.byType(Column), findsOneWidget);
+    expect(find.text('Cloudy'), findsOneWidget);
   });
 }
 
