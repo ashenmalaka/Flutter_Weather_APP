@@ -27,6 +27,23 @@ class Weather extends StatelessWidget{
             style: TextStyle(
               fontSize: 80.0,
             ),
+          ),
+          
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.only(
+                top: 12.0,
+              ),
+              margin: EdgeInsets.only(
+                left: 6.0,
+              ),
+              child: Text(
+                'u\21003',
+                style: TextStyle(
+                  fontSize: 24.0,
+                ),
+              ),
+            ),
           )
         ],
        )
