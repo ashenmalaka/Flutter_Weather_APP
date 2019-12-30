@@ -6,8 +6,18 @@ import 'package:flutter/material.dart';
 void main(){
 
   testWidgets('Weather Widgets Test', (WidgetTester tester) async{
-    await tester.pumpWidget(Weather());
+    await tester.pumpWidget(directAncestor(Weather()));
 
     expect(find.byType(RichText), findsWidgets);
   });
 }
+
+Widget directAncestor(Widget child) {
+  return Directionality(
+    textDirection: TextDirection.rtl,
+    child: Center(
+      child: child,
+    ),
+  );
+}
+
