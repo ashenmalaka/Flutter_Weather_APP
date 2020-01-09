@@ -6,7 +6,7 @@ class Weather extends StatelessWidget{
 
   final WeatherData weatherData;
   Weather({@required this.weatherData});
-  
+
   @override
   Widget build(BuildContext context) {
 
@@ -28,7 +28,8 @@ class Weather extends StatelessWidget{
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('20',
+          Text(
+            weatherData.temp.toStringAsFixed(0),
             style: TextStyle(
               fontSize: 80.0,
             ),
