@@ -68,7 +68,7 @@ class Weather extends StatelessWidget{
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Tokyo',
+              weatherData.name,
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -77,7 +77,7 @@ class Weather extends StatelessWidget{
             ),
 
             Text(
-              'Cloudy',
+              weatherData.main,
               style: TextStyle(
                 fontSize: 24.0,
                 color: Colors.white
