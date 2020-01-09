@@ -34,7 +34,13 @@ class _MyHomePageState extends State<MyHomePage>{
          ),
         ),
 
-        body: Weather(),
+        body: _weatherData != null ? Weather(weatherData: _weatherData) :
+          Center(
+            child: CircularProgressIndicator(
+              strokeWidth: 4.0,
+              valueColor: AlwaysStoppedAnimation(Colors.white),
+            ),
+          )
     );
   }
 
