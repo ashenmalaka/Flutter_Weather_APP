@@ -2,7 +2,7 @@ import 'dart:convert';
 
 class WeatherData {
   final String name;
-  final String temp;
+  final double temp;
   final String main;
   final String icon;
 
