@@ -55,6 +55,7 @@ class Weather extends StatelessWidget{
             'https://openweathermap.org/img/w/${weatherData.icon}.png',
             width: 100.0,
             height: 100.0,
+            fit: BoxFit.cover,
           )
         ],
        )
