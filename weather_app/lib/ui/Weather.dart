@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:weather_app/model/WeatherData.dart';
 
 class Weather extends StatelessWidget{
+
+  final WeatherData weatherData;
+  Weather({@required this.weatherData});
+  
   @override
   Widget build(BuildContext context) {
 
