@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './Weather.dart';
 import 'package:weather_app/model/WeatherData.dart';
 import 'package:weather_app/api/MapApi.dart';
+import 'package:weather_app/api/LocationApi.dart';
 
 class MyHomePage extends StatefulWidget{
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -43,8 +44,10 @@ class _MyHomePageState extends State<MyHomePage>{
     );
   }
 
-  getCurrentLocation(){
-    loadWeather(lat: 40.71, lon: -74.01);
+  getCurrentLocation() async {
+    LocationApi locationApi = LocationApi.getInstance();
+    final location = await locationApi.getLocation();
+    loadWeather(lat: location.lat, lon: location.lon);
   }
 
   loadWeather({double lat, double lon}) async {
