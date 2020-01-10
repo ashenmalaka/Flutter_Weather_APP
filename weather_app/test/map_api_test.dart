@@ -17,6 +17,11 @@ main(){
         return Response(json.encode(mapJson), 200);
        }
       );
+
+      final weatherItem = await mapApi.getWeather(lat: lat, lon: lon);
+
+      expect(weatherItem.name, 'Mino');
+      expect(weatherItem.temp, 18);
     };
   });
 }
