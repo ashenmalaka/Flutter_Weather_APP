@@ -4,7 +4,7 @@ import 'package:weather_app/model/WeatherData.dart';
 class MapApi {
 
   static const _apiKey = 'a03fddebe108cf5a74cb80572ebc6e53';
-  static const _endPoint = 'https://home.openweathermap.org/';
+  static const _endPoint = 'https://api.openweathermap.org/data/2.5';
   double lat, lon;
 
   Client client = Client();
