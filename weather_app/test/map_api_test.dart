@@ -5,6 +5,8 @@ main(){
     final double lat = 35.67;
     final double lon = 136.77;
 
-    final mapJson = 
+    final mapJson = {
+      
+    };
   });
 }
